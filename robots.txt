@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kotiktan79.github.io/safora-legal/sitemap.xml
