@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safora — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 32px; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin-top: 36px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  p, li { font-size: 15px; }
+  ul, ol { padding-left: 22px; }
+  table { border-collapse: collapse; margin: 16px 0; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+  th { background: #f5f5f5; }
+  .effective { color: #666; font-size: 14px; margin-bottom: 24px; }
+  .draft-banner { background: #fff8e1; border: 1px solid #f0c419; padding: 12px 16px; border-radius: 6px; margin: 16px 0; font-size: 14px; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; color: #666; font-size: 13px; }
+  a { color: #0066cc; }
+</style>
+</head>
+<body>
+<h1>Safora — Privacy Policy</h1>
+<p class="effective"><strong>Effective date:</strong> <em>[fill at launch]</em></p>
+
+<div class="draft-banner">
+  <strong>Draft.</strong> Working draft, pending Romanian / EU data
+  protection legal review (specifically the GDPR data-flow section and
+  the AI sub-processor disclosure).
+</div>
+
+<h2>1. Who we are</h2>
+<p>Safora is a Shopify application operated by <em>[SRL legal name once formed]</em> (<strong>"we"</strong>, <strong>"us"</strong>). We are based in Romania and act as a <strong>data controller</strong> for the limited data described below, and as a <strong>data processor</strong> for product data we read on your instructions through the Shopify Admin API.</p>
+<p>For questions, e-mail <code>support@safora.app</code>.</p>
+
+<h2>2. What data we process</h2>
+<h3>a) Data we collect when you install the app</h3>
+<ul>
+  <li>Shop domain (e.g. <code>your-store.myshopify.com</code>)</li>
+  <li>Shopify access token (encrypted)</li>
+  <li>Session metadata (locale, scope grants, timestamps)</li>
+</ul>
+<p>We never receive the store owner's password, payment method, or banking information.</p>
+
+<h3>b) Data we read from your store</h3>
+<p>Through the Shopify Admin API, Safora reads:</p>
+<ul>
+  <li>Product titles, descriptions, product types, and featured images</li>
+  <li>Product metafields under the <code>gpsr</code> namespace</li>
+  <li>Subscription status (for plan gating)</li>
+</ul>
+<p>Safora does <strong>not</strong> read or request customer data, order information, or payment information. The Shopify scopes Safora requests reflect this: <code>write_products</code> only.</p>
+
+<h3>c) Data we send to third-party AI providers</h3>
+<p>When you use the AI auto-fill feature, the following is sent to <strong>Anthropic, PBC</strong>:</p>
+<ul>
+  <li>Product title</li>
+  <li>Product type</li>
+  <li>Plain-text product description (HTML stripped)</li>
+</ul>
+<p>Personal data is <strong>never</strong> sent to the AI. See Anthropic's policies at <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a>.</p>
+
+<h3>d) Data we write to your store</h3>
+<p>When you save GPSR fields, Safora writes them as product metafields in your store, under the <code>gpsr</code> namespace. This data is yours and lives in your Shopify store — we do not maintain a separate copy.</p>
+
+<h2>3. Legal basis for processing (GDPR)</h2>
+<ul>
+  <li><strong>Contract performance</strong> — to provide the App's functionality</li>
+  <li><strong>Legitimate interest</strong> — to maintain App security, prevent abuse, and improve service quality</li>
+</ul>
+<p>We do not process special-category personal data and do not engage in automated decision-making with legal effect on data subjects.</p>
+
+<h2>4. Sub-processors</h2>
+<table>
+  <tr><th>Sub-processor</th><th>Purpose</th><th>Location</th></tr>
+  <tr><td>Shopify</td><td>Hosting our API session, billing</td><td>Canada / Ireland</td></tr>
+  <tr><td>Anthropic</td><td>AI auto-fill</td><td>United States</td></tr>
+  <tr><td>Fly.io</td><td>App backend hosting</td><td>Frankfurt, EU</td></tr>
+</table>
+
+<h2>5. International transfers</h2>
+<p>Anthropic is based in the United States. Product title + description data sent to Anthropic is transferred under the EU Standard Contractual Clauses incorporated into our sub-processor agreement.</p>
+
+<h2>6. Data retention</h2>
+<table>
+  <tr><th>Data</th><th>Retention</th></tr>
+  <tr><td>Shop session record</td><td>Until uninstall, then deleted within 48h</td></tr>
+  <tr><td>GPSR metafields</td><td>Stored in your Shopify store; we keep no separate copy</td></tr>
+  <tr><td>AI request logs</td><td>Up to 30 days for debugging, then purged</td></tr>
+  <tr><td>Billing records</td><td>As required by Shopify and Romanian tax law (typically 10 years)</td></tr>
+</table>
+
+<h2>7. Your rights (GDPR)</h2>
+<p>You can:</p>
+<ul>
+  <li>Access the data we hold</li>
+  <li>Rectify inaccurate data</li>
+  <li>Erase your data (uninstall)</li>
+  <li>Object to processing</li>
+  <li>Lodge a complaint with the Romanian Data Protection Authority (ANSPDCP — <a href="https://www.dataprotection.ro" target="_blank" rel="noopener">dataprotection.ro</a>)</li>
+</ul>
+<p>To exercise these rights, e-mail <code>support@safora.app</code>. We respond within 30 days.</p>
+
+<h2>8. Security</h2>
+<ul>
+  <li>TLS 1.2+ for all data in transit</li>
+  <li>Access tokens encrypted at rest</li>
+  <li>Production access restricted to authorized personnel only</li>
+  <li>No customer PII ever stored or processed</li>
+</ul>
+<p>For security incidents, contact <code>security@safora.app</code>.</p>
+
+<h2>9. Children's data</h2>
+<p>Safora is a B2B tool. We do not knowingly collect data from anyone under 16.</p>
+
+<h2>10. GDPR webhooks (Shopify mandatory)</h2>
+<ul>
+  <li><code>customers/data_request</code> — responds immediately with no content (Safora stores no customer data)</li>
+  <li><code>customers/redact</code> — responds immediately with no content</li>
+  <li><code>shop/redact</code> — deletes the session record and all shop-tied data</li>
+</ul>
+
+<h2>11. Changes</h2>
+<p>We may update this Privacy Policy. Material changes will be announced with 30 days' notice.</p>
+
+<h2>12. Contact</h2>
+<p><em>[Legal entity once SRL formed]</em><br>
+E-mail: <code>support@safora.app</code><br>
+Romanian DPA: <a href="https://www.dataprotection.ro" target="_blank" rel="noopener">dataprotection.ro</a></p>
+
+<footer>
+  © Safora. Last updated: <em>[fill at launch]</em>.
+  <br>See also: <a href="./terms.html">Terms of Service</a>
+</footer>
+</body>
+</html>

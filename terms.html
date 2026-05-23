@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safora — Terms of Service</title>
+<style>
+  body { font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 32px; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin-top: 36px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  h3 { font-size: 18px; margin-top: 24px; }
+  p, li { font-size: 15px; }
+  ul, ol { padding-left: 22px; }
+  table { border-collapse: collapse; margin: 16px 0; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+  th { background: #f5f5f5; }
+  .effective { color: #666; font-size: 14px; margin-bottom: 24px; }
+  .draft-banner { background: #fff8e1; border: 1px solid #f0c419; padding: 12px 16px; border-radius: 6px; margin: 16px 0; font-size: 14px; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; color: #666; font-size: 13px; }
+  a { color: #0066cc; }
+</style>
+</head>
+<body>
+<h1>Safora — Terms of Service</h1>
+<p class="effective"><strong>Effective date:</strong> <em>[fill at launch]</em></p>
+
+<div class="draft-banner">
+  <strong>Draft.</strong> This Terms of Service is currently a working
+  draft. Final language pending review by qualified Romanian / EU legal
+  counsel. Section markers <code>[LAWYER]</code> in the source repo
+  indicate clauses needing legal confirmation.
+</div>
+
+<h2>1. About these Terms</h2>
+<p>These Terms of Service (<strong>"Terms"</strong>) govern your use of Safora (the <strong>"App"</strong>), a Shopify application provided by <em>[SRL legal name once formed]</em> (<strong>"we"</strong>, <strong>"us"</strong>, <strong>"our"</strong>). By installing or using the App you (<strong>"Merchant"</strong>, <strong>"you"</strong>) agree to these Terms.</p>
+<p>If you do not agree, do not install the App. Existing users can uninstall at any time through Shopify; uninstall terminates your relationship with us.</p>
+
+<h2>2. What Safora does</h2>
+<p>Safora helps Shopify merchants prepare product-safety information required by the EU General Product Safety Regulation (<strong>"GPSR"</strong>) and publish it on product pages. The App:</p>
+<ul>
+  <li>Reads merchant product data (titles, descriptions, metafields) via the Shopify Admin API</li>
+  <li>Optionally drafts certain fields (safety warnings, usage instructions, product identifier) using third-party AI services</li>
+  <li>Writes drafted or merchant-entered values back to Shopify product metafields</li>
+  <li>Renders those metafields on storefront product pages via a Shopify theme app extension</li>
+</ul>
+<p>The App does <strong>not</strong> request access to customer personal data, and we do not store or process customer personal data in the course of providing the App's functionality.</p>
+
+<h2>3. Safora is NOT legal advice</h2>
+<p>Safora is a <strong>compliance assistant</strong>, not legal advice. We do not verify the accuracy of any data displayed via the App, nor do we guarantee that using the App will make your store compliant with the GPSR, any other regulation, or any marketplace policy. <strong>You are solely responsible</strong> for:</p>
+<ul>
+  <li>Verifying the accuracy, completeness, and lawfulness of all data displayed on your product pages</li>
+  <li>Sourcing real manufacturer details, EU Responsible Person information, batch numbers, and any other required identifiers</li>
+  <li>Reviewing and approving every AI-drafted suggestion before publishing</li>
+  <li>Complying with all applicable regulations in the markets you serve</li>
+</ul>
+<p>The AI is provided as a productivity aid only. AI output can be incorrect, incomplete, or out of date. We strongly recommend reviewing every AI-generated field before saving.</p>
+
+<h2>4. Plans, billing, and trial</h2>
+<table>
+  <tr><th>Plan</th><th>Price</th><th>Features</th></tr>
+  <tr><td>Free</td><td>$0 / month</td><td>Up to 10 products, manual editing, storefront block</td></tr>
+  <tr><td>Pro</td><td>$25 USD / month</td><td>Unlimited products, AI auto-fill, bulk operations</td></tr>
+</table>
+<p>Billing is processed by Shopify under your existing Shopify merchant account. Prices are in <strong>US dollars</strong>; Shopify displays the equivalent in your local currency. You can upgrade, downgrade, or cancel at any time from the App's Plans page or through Shopify. Refunds are handled per Shopify's billing policy.</p>
+
+<h2>5. AI processing and third parties</h2>
+<p>When you use the AI auto-fill feature, Safora sends the following data to <strong>Anthropic, PBC</strong> (a US-based AI provider, model <code>claude-opus-4-7</code>):</p>
+<ul>
+  <li>Product title</li>
+  <li>Product type (if set on the product)</li>
+  <li>Plain-text product description</li>
+</ul>
+<p>The following data is <strong>never</strong> sent to the AI provider:</p>
+<ul>
+  <li>Customer names, emails, addresses, or any customer personal data</li>
+  <li>Order data</li>
+  <li>Payment information</li>
+</ul>
+<p>The AI provider's processing is governed by their own terms and privacy policy. See <a href="https://www.anthropic.com/legal" target="_blank" rel="noopener">anthropic.com/legal</a>.</p>
+
+<h2>6. Acceptable use</h2>
+<p>You agree not to:</p>
+<ul>
+  <li>Reverse engineer, decompile, or attempt to extract source code from the App</li>
+  <li>Use the App to publish false, misleading, or fraudulent product information</li>
+  <li>Use the App to comply with safety regulations for products that you know are unsafe</li>
+  <li>Use the App in a way that violates Shopify's Acceptable Use Policy or applicable law</li>
+</ul>
+
+<h2>6a. Merchant acknowledgment ("AS IS", no warranty)</h2>
+<p>The App is provided <strong>"AS IS" and "AS AVAILABLE"</strong>, with all faults and without warranty of any kind, express or implied. To the maximum extent permitted by law, we disclaim all warranties, including but not limited to: <strong>merchantability</strong>, <strong>fitness for a particular purpose</strong>, <strong>non-infringement</strong>, <strong>accuracy</strong>, <strong>completeness</strong>, <strong>uninterrupted operation</strong>, <strong>timeliness</strong>, and <strong>regulatory compliance</strong>.</p>
+<p>You expressly acknowledge that:</p>
+<ul>
+  <li>AI-drafted content is a <strong>suggestion only</strong> and may be wrong, incomplete, outdated, or hallucinated;</li>
+  <li>The App cannot and does not verify that the data displayed via the storefront block is accurate, current, or sufficient to satisfy any regulator, marketplace, or law in any jurisdiction;</li>
+  <li>You have <strong>independently reviewed and explicitly approved</strong> every value saved (the App enforces a per-save acknowledgment checkbox creating a positive record of this);</li>
+  <li>Reliance on the App, including AI output, is solely at your own risk.</li>
+</ul>
+
+<h2>6b. Merchant indemnification</h2>
+<p>You agree to <strong>indemnify, defend, and hold harmless</strong> us, our officers, employees, contractors, and affiliates from and against any and all claims, damages, losses, fines (including regulatory fines under GPSR, GDPR, or any other regulation), penalties, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+<ul>
+  <li>Any data, content, or representation you publish using the App;</li>
+  <li>Your products, including any safety defect, mislabeling, or non-conformity;</li>
+  <li>Your alleged non-compliance with the GPSR, the EU Product Liability Directive, the GDPR, or any other applicable regulation;</li>
+  <li>Your breach of these Terms;</li>
+  <li>Any third-party claim brought against us by your customers, competitors, suppliers, or regulators that arises from your use of the App.</li>
+</ul>
+<p>This indemnity survives termination of these Terms.</p>
+
+<h2>7. Liability limit</h2>
+<p>To the maximum extent permitted by law, our total aggregate liability to you arising out of or in connection with the App is limited to the fees you have paid us in the <strong>twelve (12) months</strong> preceding the event giving rise to the claim. We are not liable for any indirect, consequential, incidental, special, or punitive damages, including but not limited to lost profits, lost revenue, regulatory fines, or reputational harm.</p>
+<p>Nothing in these Terms limits liability that cannot be limited under applicable law (including, where applicable, gross negligence, intentional misconduct, or death and personal injury under Romanian or EU consumer law).</p>
+
+<h2>8. Data retention and deletion</h2>
+<p>We retain only the data required to operate the App: your Shopify shop domain, the Shopify-issued access token, and basic session metadata. We do not retain copies of your product metafields outside of Shopify itself.</p>
+<p>On app uninstall, the <code>app/uninstalled</code> webhook fires and we delete your session record. On a <code>shop/redact</code> webhook (Shopify's "shop forgotten" signal), we delete all remaining data associated with your shop.</p>
+
+<h2>9. Changes to these Terms</h2>
+<p>We may update these Terms from time to time. Material changes will be announced via the App or by e-mail at least 30 days before they take effect. Continued use of the App after the effective date constitutes acceptance of the updated Terms.</p>
+
+<h2>9a. Pre-suit notice and cure period</h2>
+<p>Before initiating any legal proceeding against us, you must:</p>
+<ol>
+  <li>Send a written notice to <code>support@safora.app</code> (or the e-mail listed at the time) describing the alleged breach or claim in reasonable detail;</li>
+  <li>Allow a <strong>90-day cure period</strong> during which we may investigate, respond, and remedy if remedy is possible.</li>
+</ol>
+<p>Failure to provide notice and the cure period is a <strong>material breach</strong> of these Terms and a complete defense to any claim brought without it.</p>
+
+<h2>9b. Class action waiver</h2>
+<p>To the maximum extent permitted by law, <strong>you waive your right to participate in any class action, representative action, or consolidated proceeding</strong> against us. Any dispute must be brought solely on an individual basis. If this waiver is found unenforceable in your jurisdiction, the remainder of these Terms continues in force (see §10a Severability).</p>
+
+<h2>9c. Force majeure</h2>
+<p>We are not liable for any failure or delay caused by events beyond our reasonable control, including but not limited to: outages of Shopify or Anthropic, network failures, power outages, government action, war, pandemic, natural disasters, or labor disputes.</p>
+
+<h2>10. Governing law and dispute resolution</h2>
+<p>These Terms are governed by the laws of <strong>Romania</strong>, without regard to its conflict of laws rules. Any dispute arising out of or relating to these Terms or the App will be brought in the competent courts of <strong>Bucharest, Romania</strong>.</p>
+
+<h2>10a. Severability</h2>
+<p>If any provision of these Terms is found unenforceable or invalid by a competent authority, that provision will be enforced to the maximum extent permitted, and the remaining provisions will continue in full force and effect.</p>
+
+<h2>10b. Entire agreement &amp; no third-party beneficiaries</h2>
+<p>These Terms (together with the Privacy Policy) constitute the <strong>entire agreement</strong> between you and us regarding the App and supersede all prior agreements. No third party (including your customers, suppliers, or end-buyers) has any right of enforcement under these Terms.</p>
+
+<h2>11. Contact</h2>
+<p><em>[Legal entity to be filled once SRL is formed]</em><br>
+E-mail: <code>support@safora.app</code> (placeholder)</p>
+
+<footer>
+  © Safora. Last updated: <em>[fill at launch]</em>.
+  <br>See also: <a href="./privacy.html">Privacy Policy</a>
+</footer>
+</body>
+</html>
